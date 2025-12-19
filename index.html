@@ -3,16 +3,25 @@
 </head>
 <body>
   <script>
-    alert("Hi")
+    function onPress(id) {
+      if (id == "alert") {
+        alert(document.getElementById("alert").text)
+        return
+      } else {
+        return
+      }
+    }
   </script>
   <div class="center">
     <h1>My website</h1>
+    <input type='text' id='alert' placeholder='What to pop up'></input>
+    <button onClick="alert('alert')"> Alert </button>
   </div>
   <style>
     @media (prefers-color-scheme: dark) {
     body {
-        background-color: #222;
-        color: #ccc;
+        background-color: black;
+        color: white;
     }
   }
   .center {
